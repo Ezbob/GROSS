@@ -99,7 +99,7 @@ class Gross {
 
     static void argumentHandler( String... args ) {
 
-        def cli = new CliBuilder(usage: "java -jar gross.jar -[hscet] -[p|-set-external] <solver_path> -[i|-input] <inputFile> -[o|-output] <outputFile>")
+        def cli = new CliBuilder(usage: "./grossArt -[hscet] -[p|-set-external] <solver_path> -[i|-input] <inputFile> -[o|-output] <outputFile>")
 
         cli.with {
             h longOpt: "help", 'Show usage information'
