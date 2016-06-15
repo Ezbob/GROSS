@@ -1,0 +1,18 @@
+group 'gross'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "Gross"
+
+dependencies {
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.6'
+    compile group: 'org.tinylog', name: 'tinylog', version: '1.1'
+    compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.2'
+}
